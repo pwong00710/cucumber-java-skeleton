@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4878210798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.before()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "a few cukes",
+        "description": "",
+        "id": "belly;a-few-cukes",
+        "after": [
+          {
+            "result": {
+              "duration": 643746656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 682030,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have 42 cukes in my belly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "42",
+                  "offset": 7
+                }
+              ],
+              "location": "BellyStepDefs.I_have_cukes_in_my_belly(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443801,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I wait 1 hour",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                }
+              ],
+              "location": "BellyStepDefs.i_wait_hour(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 378180,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "my belly should growl",
+            "match": {
+              "location": "BellyStepDefs.my_belly_should_growl()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Belly",
+    "description": "",
+    "id": "belly",
+    "keyword": "Feature",
+    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/belly.feature",
+    "tags": []
+  }
+]

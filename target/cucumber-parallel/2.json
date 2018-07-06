@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7225627293,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.before()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "",
+        "description": "",
+        "id": "search-wikipedia;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 636940971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 97514772,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Enter search term \u0027mercury\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercury",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchWikipediaStepDefs.searchFor(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1026750015,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Do search",
+            "match": {
+              "location": "SearchWikipediaStepDefs.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50868943,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search results are shown for \u0027Mercury usually refers to:\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mercury usually refers to:",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4144203521,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.before()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "search-wikipedia;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 623583069,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchWikipediaStepDefs.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 86985445,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Enter search term \u0027max\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "max",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchWikipediaStepDefs.searchFor(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 815048828,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Do search",
+            "match": {
+              "location": "SearchWikipediaStepDefs.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51012627,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search results are shown for \u0027Max or MAX may refer to:\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Max or MAX may refer to:",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "search Wikipedia",
+    "description": "",
+    "id": "search-wikipedia",
+    "keyword": "Feature",
+    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/searchWikipedia.feature",
+    "tags": []
+  }
+]
