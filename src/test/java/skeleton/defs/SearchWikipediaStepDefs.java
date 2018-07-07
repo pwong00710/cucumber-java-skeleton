@@ -1,4 +1,4 @@
-package skeleton;
+package skeleton.defs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,24 +12,26 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import static junit.framework.Assert.assertTrue;
-import static junit.framework.TestCase.assertFalse;
-import static org.junit.Assert.assertEquals;
+import org.junit.Assert;
 
 public class SearchWikipediaStepDefs {
 
     private WebDriver driver;
 
-    @Before
+    @Before("@web")
     public void before() {
-        System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
+        //-Dwebdriver.chrome.driver=H:\\softwares\\chromedriver_win32\\chromedriver.exe
+//        System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
+        if (System.getProperty("webdriver.chrome.driver") == null) {
+            System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
+        }
         driver = new ChromeDriver();
         driver.navigate().to("http://en.wikipedia.org");
     }
 
-    @After
+    @After("@web")
     public void after() {
-        driver.quit();
+        if (driver != null) driver.quit();
     }
 
     @Given("^Enter search term '(.*?)'$")
@@ -49,6 +51,6 @@ public class SearchWikipediaStepDefs {
         WebElement results = driver
                 .findElement(By.cssSelector("div#mw-content-text.mw-content-ltr p"));
 //        assertFalse(results.getText().contains(searchResult + " may refer to:"));
-        assertTrue(results.getText().startsWith(searchResult));
+        Assert.assertTrue(results.getText().startsWith(searchResult));
     }
 }

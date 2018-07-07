@@ -3,171 +3,83 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7499196678,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.before()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "",
+        "line": 3,
+        "name": "Book an FX Trade",
         "description": "",
-        "id": "search-wikipedia;;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 837063196,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.after()"
-            }
-          }
-        ],
+        "id": "fxtrade;book-an-fx-trade",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 242182932,
+              "duration": 78987062,
               "status": "passed"
             },
             "line": 4,
-            "name": "Enter search term \u0027mercury\u0027",
+            "name": "trades with the following details are created:",
             "match": {
-              "arguments": [
-                {
-                  "val": "mercury",
-                  "offset": 19
-                }
-              ],
-              "location": "SearchWikipediaStepDefs.searchFor(String)"
+              "location": "FxTradeStepDefs.trades_with_the_following_details_are_created(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "buyCcy",
+                  "sellCcy",
+                  "amount",
+                  "date"
+                ]
+              },
+              {
+                "cells": [
+                  "EUR",
+                  "USD",
+                  "12345.67",
+                  "2017-11-23"
+                ]
+              },
+              {
+                "cells": [
+                  "GBP",
+                  "EUR",
+                  "67890.12",
+                  "2017-11-24"
+                ]
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 773004292,
+              "duration": 1097531,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Do search",
+            "line": 8,
+            "name": "the trades are executed",
             "match": {
-              "location": "SearchWikipediaStepDefs.clickSearchButton()"
+              "location": "FxTradeStepDefs.trades_are_executd()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 100317223,
+              "duration": 3310008,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Search results are shown for \u0027Mercury usually refers to:\u0027",
+            "line": 9,
+            "name": "the trades are confirmed",
             "match": {
-              "arguments": [
-                {
-                  "val": "Mercury usually refers to:",
-                  "offset": 30
-                }
-              ],
-              "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3518347328,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.before()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "",
-        "description": "",
-        "id": "search-wikipedia;;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 617899484,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 84643279,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Enter search term \u0027max\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "max",
-                  "offset": 19
-                }
-              ],
-              "location": "SearchWikipediaStepDefs.searchFor(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 873094483,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Do search",
-            "match": {
-              "location": "SearchWikipediaStepDefs.clickSearchButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 65853704,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Search results are shown for \u0027Max or MAX may refer to:\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Max or MAX may refer to:",
-                  "offset": 30
-                }
-              ],
-              "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
+              "location": "FxTradeStepDefs.trades_are_confirmed()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "search Wikipedia",
+    "name": "FxTrade",
     "description": "",
-    "id": "search-wikipedia",
+    "id": "fxtrade",
     "keyword": "Feature",
-    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/searchWikipedia.feature",
+    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature",
     "tags": []
   }
 ]

@@ -3,56 +3,38 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7508045655,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.before()"
-            }
-          }
-        ],
         "line": 3,
         "name": "a few cukes",
         "description": "",
         "id": "belly;a-few-cukes",
-        "after": [
-          {
-            "result": {
-              "duration": 927722834,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchWikipediaStepDefs.after()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 473658,
+              "duration": 1134540,
               "status": "passed"
             },
             "line": 4,
-            "name": "I have 42 cukes in my belly",
+            "name": "I have 42 cukes in my \u0027big\u0027 belly",
             "match": {
               "arguments": [
                 {
                   "val": "42",
                   "offset": 7
+                },
+                {
+                  "val": "big",
+                  "offset": 23
                 }
               ],
-              "location": "BellyStepDefs.I_have_cukes_in_my_belly(int)"
+              "location": "BellyStepDefs.I_have_cukes_in_my_belly(int,String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 404615,
+              "duration": 362319,
               "status": "passed"
             },
             "line": 5,
@@ -70,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 256267,
+              "duration": 347080,
               "status": "passed"
             },
             "line": 6,

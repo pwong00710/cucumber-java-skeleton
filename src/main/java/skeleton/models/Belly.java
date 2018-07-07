@@ -1,4 +1,4 @@
-package skeleton;
+package skeleton.models;
 
 public class Belly {
 

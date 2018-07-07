@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/searchWikipedia.feature"},
+        features = {"H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature"},
         plugin = {"json:H:/Projects/Source/home/cucumber-java-skeleton/target/2.json", "html:H:/Projects/Source/home/cucumber-java-skeleton/target/2"},
         monochrome = false,
         tags = {},

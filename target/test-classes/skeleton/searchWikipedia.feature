@@ -1,6 +1,8 @@
+@web
+@ignored
 Feature: search Wikipedia
 
-  @ignored
+#  @ignored
   Scenario Outline:
     Given Enter search term '<searchTerm>'
     When Do search

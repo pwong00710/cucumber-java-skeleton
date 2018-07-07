@@ -22,3 +22,8 @@ public class RunMyString {
         System.out.println(reverseStr2(reverseStr,"Lambda Demo"));
     }
 }
+
+interface MyString {
+    String myStringFunction(String str);
+}
+

@@ -1,131 +1,68 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/searchWikipedia.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature");
 formatter.feature({
-  "name": "search Wikipedia",
+  "name": "FxTrade",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "",
+formatter.scenario({
+  "name": "Book an FX Trade",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "name": "Enter search term \u0027\u003csearchTerm\u003e\u0027",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "Do search",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Search results are shown for \u0027\u003cresult\u003e\u0027",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
+  "name": "trades with the following details are created:",
   "rows": [
     {
       "cells": [
-        "searchTerm",
-        "result"
+        "buyCcy",
+        "sellCcy",
+        "amount",
+        "date"
       ]
     },
     {
       "cells": [
-        "mercury",
-        "Mercury usually refers to:"
+        "EUR",
+        "USD",
+        "12345.67",
+        "2017-11-23"
       ]
     },
     {
       "cells": [
-        "max",
-        "Max or MAX may refer to:"
+        "GBP",
+        "EUR",
+        "67890.12",
+        "2017-11-24"
       ]
     }
-  ]
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter search term \u0027mercury\u0027",
+  ],
   "keyword": "Given "
 });
 formatter.match({
-  "location": "SearchWikipediaStepDefs.searchFor(String)"
+  "location": "FxTradeStepDefs.trades_with_the_following_details_are_created(DataTable)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Do search",
+  "name": "the trades are executed",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SearchWikipediaStepDefs.clickSearchButton()"
+  "location": "FxTradeStepDefs.trades_are_executd()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Search results are shown for \u0027Mercury usually refers to:\u0027",
+  "name": "the trades are confirmed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
+  "location": "FxTradeStepDefs.trades_are_confirmed()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter search term \u0027max\u0027",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SearchWikipediaStepDefs.searchFor(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Do search",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SearchWikipediaStepDefs.clickSearchButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Search results are shown for \u0027Max or MAX may refer to:\u0027",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SearchWikipediaStepDefs.assertSearchResult(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 });

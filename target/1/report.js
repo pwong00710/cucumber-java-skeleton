@@ -9,15 +9,12 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "I have 42 cukes in my belly",
+  "name": "I have 42 cukes in my \u0027big\u0027 belly",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BellyStepDefs.I_have_cukes_in_my_belly(int)"
+  "location": "BellyStepDefs.I_have_cukes_in_my_belly(int,String)"
 });
 formatter.result({
   "status": "passed"
@@ -40,9 +37,6 @@ formatter.match({
   "location": "BellyStepDefs.my_belly_should_growl()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 });

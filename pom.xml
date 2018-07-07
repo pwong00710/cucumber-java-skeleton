@@ -15,6 +15,7 @@
         <cucumber.pro.version>2.0.4</cucumber.pro.version>
         <maven.compiler.version>3.3</maven.compiler.version>
         <selenium.version>3.13.0</selenium.version>
+        <lombok.version>1.18.0</lombok.version>
     </properties>
 
     <dependencies>
@@ -52,6 +53,12 @@
             <version>${selenium.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -84,7 +91,7 @@
                             <!--<cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>-->
                             <cucumberOutputDir>target</cucumberOutputDir>
                             <format>json,html</format>
-                            <!--<tags>"~@ignored"</tags>-->
+                            <!--<tags>"not @ignored"</tags>-->
                         </configuration>
                     </execution>
                 </executions>

@@ -1,4 +1,4 @@
-package Stream;
+package stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,6 @@ import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-import java.util.Map;
 
 public class Java8StreamTester {
 

@@ -12,3 +12,7 @@ public class RunMyGreeting {
         System.out.println(eveningGreeting.processName("Jessica"));
     }
 }
+
+interface MyGreeting {
+    String processName(String str);
+}

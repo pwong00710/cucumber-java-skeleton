@@ -13,4 +13,8 @@ public class RunNumericTest {
     }
 }
 
+interface NumericTest {
+    boolean computeTest(int n);
+}
+
 

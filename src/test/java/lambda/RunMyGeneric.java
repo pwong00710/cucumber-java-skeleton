@@ -31,3 +31,7 @@ public class RunMyGeneric {
 
     }
 }
+
+interface MyGeneric<T> {
+    T compute(T t);
+}
