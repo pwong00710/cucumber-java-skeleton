@@ -1,5 +1,5 @@
 @web
-@ignored
+#@ignored
 Feature: search Wikipedia
 
 #  @ignored

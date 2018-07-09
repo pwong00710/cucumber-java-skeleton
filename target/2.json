@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 78987062,
+              "duration": 37463772,
               "status": "passed"
             },
             "line": 4,
@@ -50,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 1097531,
+              "duration": 1194335,
               "status": "passed"
             },
             "line": 8,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 3310008,
+              "duration": 5543329,
               "status": "passed"
             },
             "line": 9,
@@ -79,7 +79,7 @@
     "description": "",
     "id": "fxtrade",
     "keyword": "Feature",
-    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature",
+    "uri": "/Users/keithwong/Projects/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature",
     "tags": []
   }
 ]

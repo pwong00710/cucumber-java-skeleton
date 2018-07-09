@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1134540,
+              "duration": 1500101,
               "status": "passed"
             },
             "line": 4,
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 362319,
+              "duration": 642415,
               "status": "passed"
             },
             "line": 5,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 347080,
+              "duration": 580126,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
     "description": "",
     "id": "belly",
     "keyword": "Feature",
-    "uri": "H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/belly.feature",
+    "uri": "/Users/keithwong/Projects/cucumber-java-skeleton/src/test/resources/skeleton/belly.feature",
     "tags": []
   }
 ]

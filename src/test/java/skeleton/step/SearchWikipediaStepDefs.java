@@ -12,6 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import org.junit.Assert;
+import skeleton.util.OSValidator;
 
 public class SearchWikipediaStepDefs {
 
@@ -22,7 +23,11 @@ public class SearchWikipediaStepDefs {
         //-Dwebdriver.chrome.driver=H:\\softwares\\chromedriver_win32\\chromedriver.exe
 //        System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
         if (System.getProperty("webdriver.chrome.driver") == null) {
-            System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
+            if (OSValidator.isWindows()) {
+                System.setProperty("webdriver.chrome.driver", "H:\\softwares\\chromedriver_win32\\chromedriver.exe");
+            } else if (OSValidator.isMac()) {
+                System.setProperty("webdriver.chrome.driver", "/Users/keithwong/Softwares/chromedriver_mac64/chromedriver");
+            }
         }
         driver = new ChromeDriver();
         driver.navigate().to("http://en.wikipedia.org");

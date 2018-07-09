@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Projects/Source/home/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/keithwong/Projects/cucumber-java-skeleton/src/test/resources/skeleton/fxTRade.feature");
 formatter.feature({
   "name": "FxTrade",
   "description": "",
